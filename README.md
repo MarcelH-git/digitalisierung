@@ -34,6 +34,15 @@ PAPERLESS_SECRET_KEY=    # Langer zufälliger String, z.B. mit: python3 -c "impo
 
 ## Skripte
 
+### `paperless_ki.py` (liegt in `~/privat/`)
+Analysiert neue Dokumente (ohne Tags) mit Ollama und setzt automatisch Titel, Tags, Korrespondent und Dokumenttyp. Führt am Ende automatisch einen Paperless-Export als Backup durch.
+
+```bash
+python3 ~/privat/paperless_ki.py
+```
+
+Verwendetes Modell: `qwen2.5:14b-ctx32k` (konfigurierbar über `ANALYSIS_MODEL` im Script).
+
 ### `paperless_to_anythingllm.py`
 Synchronisiert neue Dokumente aus Paperless in den AnythingLLM-Workspace.
 
