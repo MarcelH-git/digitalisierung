@@ -6,7 +6,7 @@ import re
 import requests
 from pathlib import Path
 
-ENV_FILE = Path.home() / "privat" / ".env"
+ENV_FILE = Path.home() / "privat" / "dokumente" / ".env"
 ANYTHINGLLM_URL = "http://localhost:3002"
 WORKSPACE = "my-workspace"
 

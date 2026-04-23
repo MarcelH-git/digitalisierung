@@ -13,7 +13,7 @@ def load_env(path):
                 env[key.strip()] = value.strip()
     return env
 
-_env = load_env(os.path.expanduser("~/privat/.env"))
+_env = load_env(os.path.expanduser("~/privat/dokumente/.env"))
 
 PAPERLESS_URL = "http://127.0.0.1:8010"
 PAPERLESS_TOKEN = _env["PAPERLESS_TOKEN"]
